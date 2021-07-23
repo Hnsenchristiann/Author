@@ -1,0 +1,45 @@
+<a-scene
+    tap-place
+    xrextras-almost-there
+    xrextras-loading
+    xrextras-runtime-error
+    renderer="colorManagement:true"
+    xrweb
+>
+    <a-assets>
+        <a-asset-item id="treeModel" src="https://visi8-webcomic.s3-ap-southeast-1.amazonaws.com/monkey.glb"></a-asset-item>
+    </a-assets>
+    <a-camera
+        id="camera"
+        position="0 8 0"
+        raycaster="objects: .cantap"
+        cursor="
+        fuse: false;
+        rayOrigin: mouse;">
+    </a-camera>
+    <a-entity
+        light="
+        type: directional;
+        intensity: 0.8;
+        castShadow: true;
+        shadowMapHeight:2048;
+        shadowMapWidth:2048;
+        shadowCameraTop: 20;
+        shadowCameraBottom: -20;
+        shadowCameraRight: 20;
+        shadowCameraLeft: -20;
+        target: #camera"
+        xrextras-attach="target: camera; offset: 8 15 4"
+        position="1 4.3 2.5"
+        shadow>
+    </a-entity>
+    <a-light type="ambient" intensity="0.5"></a-light>
+    <a-box
+        id="ground"
+        class="cantap"
+        scale="1000 2 1000"
+        position="0 -1 0"
+        material="shader: shadow; transparent: true; opacity: 0.4"
+        shadow>
+    </a-box>
+</a-scene>

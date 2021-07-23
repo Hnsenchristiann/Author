@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "KARA",
+    "Price": 16.99,
+    "ComicImage": "https://m.media-amazon.com/images/I/719tCHXNiXL._AC_UL320_.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Forgotten Son",
+    "Price": 16.99,
+    "ComicImage": "https://m.media-amazon.com/images/I/719tCHXNiXL._AC_UL320_.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Kipo",
+    "Price": 12.99,
+    "ComicImage": "https://m.media-amazon.com/images/I/719tCHXNiXL._AC_UL320_.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Naruto",
+    "Price": 23.99,
+    "ComicImage": "https://m.media-amazon.com/images/I/719tCHXNiXL._AC_UL320_.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Kipo",
+    "Price": 12.99,
+    "ComicImage": "https://m.media-amazon.com/images/I/719tCHXNiXL._AC_UL320_.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Naruto",
+    "Price": 23.99,
+    "ComicImage": "https://m.media-amazon.com/images/I/719tCHXNiXL._AC_UL320_.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Kipo",
+    "Price": 12.99,
+    "ComicImage": "https://m.media-amazon.com/images/I/719tCHXNiXL._AC_UL320_.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Naruto",
+    "Price": 23.99,
+    "ComicImage": "https://m.media-amazon.com/images/I/719tCHXNiXL._AC_UL320_.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Kipo",
+    "Price": 12.99,
+    "ComicImage": "https://m.media-amazon.com/images/I/719tCHXNiXL._AC_UL320_.jpg"
+  },
+  {
+    "id": 10,
+    "title": "KARA",
+    "Price": 16.99,
+    "ComicImage": "https://m.media-amazon.com/images/I/719tCHXNiXL._AC_UL320_.jpg"
+  }
+]
