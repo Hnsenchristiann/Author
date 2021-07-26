@@ -10,6 +10,6 @@ export default {
     },
 
     author() {
-        return Api().get("/authors");
+        return Api().get("/author/1");
     }
 };

@@ -57,7 +57,7 @@
       </DisclosurePanel>
     </Disclosure>
   </div>
-  <div class="bg-gray-700 text-gray-300">
+  <div id="app-body" class="bg-gray-700 text-gray-300">
     <router-view></router-view>
   </div>
 </template>
@@ -137,4 +137,10 @@ export default{
   position: relative;
   z-index: 98;
 }
+
+
+#app-body{
+    height: 4000px;
+}
+
 </style>

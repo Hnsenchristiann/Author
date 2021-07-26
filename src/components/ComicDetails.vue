@@ -31,6 +31,13 @@
         {{book.description}}
     </div>
 
+    <p class="authors">Author : <a href="/author">{{author.name}}</a></p>
+    <div class="author-list">
+        <div v-for="writer in comment" :key="writer.id">
+            <a class="authors-name" href="/author">{{writer.name}}</a>
+        </div>
+    </div>
+
     <p class="cmn">Comments : </p>
 
     <div v-for="item in comment" :key="item.id">
@@ -40,7 +47,7 @@
             </div>
 
             <div class="card2">
-                <h1 class="judul">{{item.comment}}</h1>
+                <h1 class="judul-komik">{{item.comment}}</h1>
                 <p class="comment">{{item.name}}</p>
                 <p class="jam">{{item.created_at}}</p>
                 <div class="button">
@@ -61,7 +68,8 @@
         data() {
             return {
                 book: [],
-                comment: []
+                comment: [],
+                author: []
             };
         },
         mounted() {
@@ -71,6 +79,10 @@
 
             Comic.comment().then(response => {
                 this.comment = response.data;
+            }),
+
+            Comic.author().then(response => {
+                this.author = response.data;
             })
         }
     }
@@ -118,7 +130,7 @@
         height: 200px;
     }
 
-    .judul {
+    .judul-komik {
         font-size: 30px;
         margin-left: 50px;
     }
@@ -194,7 +206,7 @@
             width: 300px;
         }
 
-        .judul {
+        .judul-komik {
             font-size: 18px;
             margin-left: 50px;
         }
@@ -317,7 +329,7 @@
             top: 228%;
             left: 40%;
             -ms-transform: translate(-50%, -50%);
-            transform: translate(-110%, -850%);
+            transform: translate(-123%, -850%);
         }
 
         .text-share {
@@ -325,7 +337,7 @@
             top: 229%;
             left: 40%;
             -ms-transform: translate(-50%, -50%);
-            transform: translate(-10%, -980%);
+            transform: translate(-2%, -970%);
             font-size: 12px;
         }
 
@@ -337,7 +349,7 @@
             top: 228%;
             left: -12.5%;
             -ms-transform: translate(-50%, -50%);
-            transform: translate(150%, -850%);
+            transform: translate(200%, -850%);
         }
 
         .text-love {
@@ -345,7 +357,7 @@
             top: 228.5%;
             left: -12%;
             -ms-transform: translate(-50%, -50%);
-            transform: translate(255%, -980%);
+            transform: translate(250%, -970%);
             font-size: 12px;
         }
 
@@ -356,6 +368,14 @@
         .container-text{
             position: relative;
             padding: 5px;
+        }
+
+        .authors{
+            margin-left: 15px;
+        }
+
+        .authors-name{
+            margin-left: 75px;
         }
 
     }
