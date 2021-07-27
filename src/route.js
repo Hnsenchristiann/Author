@@ -48,8 +48,8 @@ const routes = [
         component: ComicView
     },
     {
-        path: '/details',
-        name: 'Book Detail',
+        path: '/details/:id',
+        name: 'BookDetail',
         meta: {
             default: true,
             title: 'Book Detail',
@@ -82,7 +82,7 @@ const routes = [
         component: Regis
     },
     {
-        path: '/author',
+        path: '/author/:id',
         name: 'Author',
         meta: {
             title: 'Author',

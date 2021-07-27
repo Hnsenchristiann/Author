@@ -31,12 +31,14 @@
         {{book.description}}
     </div>
 
-    <p class="authors">Author : <a href="/author">{{author.name}}</a></p>
-    <div class="author-list">
-        <div v-for="writer in comment" :key="writer.id">
-            <a class="authors-name" href="/author">{{writer.name}}</a>
-        </div>
-    </div>
+    <p class="authors">Authors List : </p>
+
+   <li class="authors-name" v-for="item in author" :key="item.id">
+        <router-link :to="{ name: 'Author', params: {id: item.id}}">
+            <a>{{item.name}}</a>
+        </router-link>
+    </li>
+
 
     <p class="cmn">Comments : </p>
 
@@ -73,7 +75,7 @@
             };
         },
         mounted() {
-            Comic.auth().then(response => {
+            Comic.get(this.$route.params.id).then(response => {
                 this.book = response.data;
             }),
 
@@ -375,7 +377,7 @@
         }
 
         .authors-name{
-            margin-left: 75px;
+            margin-left: 17px;
         }
 
     }

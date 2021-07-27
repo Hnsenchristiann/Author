@@ -11,7 +11,9 @@
                     <div v-for="item in books" :key="item.id">
                         <img :src="item.cover_url" class="card-img-top" />
                         <div class="card-body">
-                            <h5 class="card-title">{{item.title}}</h5>
+                            <router-link :to="{ name: 'BookDetail', params: {id: item.id}}">
+                                <h5 class="card-title">{{item.title}}</h5>
+                            </router-link>
                             <p class="card-text">$ {{item.price}}</p>
                         </div>
                     </div>

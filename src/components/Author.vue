@@ -24,7 +24,7 @@
 <script>
     import axios from 'axios'
     import { ref } from 'vue'
-    import Comic from "../apis/Comic";
+    import Author from "../apis/Author";
     export default {
         name: 'author',
         data() {
@@ -33,7 +33,7 @@
             };
         },
         mounted() {
-            Comic.author().then(response => {
+            Author.get(this.$route.params.id).then(response => {
                 this.author = response.data;
             })
         }

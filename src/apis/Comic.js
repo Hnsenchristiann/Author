@@ -1,8 +1,8 @@
 import Api from './Api';
 
 export default {
-    auth() {
-        return Api().get("/comic/8");
+    get(id) {
+        return Api().get("/comic/" + id);
     },
 
     comment() {
@@ -10,6 +10,6 @@ export default {
     },
 
     author() {
-        return Api().get("/author/1");
+        return Api().get("/authors");
     }
 };
