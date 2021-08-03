@@ -7,6 +7,7 @@ import ArView from './components/ArView.vue'
 import Regis from './components/Regis.vue'
 import SignIn from './components/SignIn.vue'
 import Author from './components/Author.vue'
+import Search from './components/Search.vue'
 import { createWebHistory, createRouter } from "vue-router";
 
 const routes = [
@@ -89,6 +90,14 @@ const routes = [
         },
         component: Author
     },
+    {
+        path: '/search',
+        name: 'Search',
+        meta: {
+            title: 'Search Page',
+        },
+        component: Search
+    },
 ]
 
 const Route = createRouter({
@@ -113,7 +122,7 @@ Route.beforeEach((to, from, next) => {
     } else if (to.matched.some(record => record.meta.guestOnly)) {
         if (isloggedIn()) {
             next({
-                path: '/home',
+                path: '/',
                 query: { redirect: to.fullPath }
             });
         } else {

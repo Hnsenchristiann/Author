@@ -52,7 +52,7 @@
                 <h1 class="judul-komik">{{item.comment}}</h1>
                 <p class="comment">{{item.name}}</p>
                 <p class="jam">{{item.created_at}}</p>
-                <div class="button">
+                <div class="button-col">
                     <button class="btn-comment-rep">Reply</button>
                     <button class="btn-comment-like">Like</button>
                 </div>
@@ -157,11 +157,6 @@
         margin-left: 10%;
     }
 
-    .button {
-        margin-left: 70%;
-    }
-
-
     .sinopsis {
         float: right;
     }
@@ -240,17 +235,16 @@
             margin-bottom: 20%;
         }
 
-
         .btn .btn-comment-like {
             background-color: #3EB489;
             width: 50px;
         }
 
-        .button {
-            margin-left: 50%;
+        .button-col{
+            width: 180px;
+            margin-left: 40%;
+            padding: 5%;
         }
-
-
 
         .sinopsis {
             padding: 15px;
@@ -307,6 +301,7 @@
             position:relative;
             display: flex;
             padding: 10px;
+            height: 180px;
         }
 
         img {
@@ -411,7 +406,7 @@
                 top: 210%;
                 left: 15%;
                 -ms-transform: translate(-50%, -50%);
-                transform: translate(-110%, -1100%);
+                transform: translate(-180%, -1100%);
             }
 
             .text-share {
@@ -419,7 +414,7 @@
                 top: 210%;
                 left: 15%;
                 -ms-transform: translate(-50%, -50%);
-                transform: translate(-10%, -1250%);
+                transform: translate(-30%, -1250%);
                 font-size: 12px;
             }
 
@@ -439,7 +434,7 @@
                 top: 210%;
                 left: 15%;
                 -ms-transform: translate(-50%, -50%);
-                transform: translate(255%, -1245%);
+                transform: translate(220%, -1245%);
                 font-size: 12px;
             }
 
@@ -482,6 +477,10 @@
             .container-text{
                 position: relative;
                 padding: 10px;
+            }
+
+            .container-info{
+                height: 230px;
             }
         }
 

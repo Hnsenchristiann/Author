@@ -3,6 +3,9 @@
         <div class="card-body" v-if="user">
             <h3>Hello, {{user.name}}</h3>
             <span>{{user.email}}</span>
+            <div>
+                <a href="/dashboard">Go to Dashboard Page</a>
+            </div>
         </div>
     </div>
 </template>
