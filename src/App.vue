@@ -70,8 +70,11 @@ import { BellIcon, MenuAlt2Icon, XIcon, DotsVerticalIcon, ChevronLeftIcon } from
 
 const navigation = [
   { name: 'Dashboard', href: '/dashboard', current: true },
-  { name: 'Comic Details', href: '/details', current: false },
-  { name: 'View Comic', href: '/view', current: false },
+  { name: 'Purchase History', href: '/Purchase', current: false },
+  { name: 'Favorite Comic', href: '/favcom', current: false },
+  { name: 'Profile', href: '/profile', current: false },
+  { name: 'Logout', href: '/', current: false },
+
 ]
 </script>
 
@@ -138,9 +141,5 @@ export default{
   z-index: 98;
 }
 
-
-#app-body{
-    height: 4000px;
-}
 
 </style>

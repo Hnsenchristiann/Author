@@ -32,10 +32,10 @@ const routes = [
     },
     {
         path: '/dashboard',
-        name: 'AR Comics',
+        name: 'Dashboard',
         meta: {
             default: true,
-            title: 'AR Comics',
+            title: 'Dashboard',
         },
         component: Dashboard
     },
